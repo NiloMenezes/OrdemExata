@@ -1,6 +1,6 @@
 ﻿namespace OrdemExata.Dominio.Entidades
 {
-    public class Fornecedor
+    public class Fornecedor : Entidade
     {
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -8,5 +8,10 @@
         public string Descicao { get; set; }
         public string Contato { get; set; }
         public int EnderecoId { get; set; }
+
+        public override void Validate()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

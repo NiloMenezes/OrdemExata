@@ -3,7 +3,7 @@ using System.Xml.Schema;
 
 namespace OrdemExata.Dominio.Entidades
 {
-    public class LancamentoCaixa
+    public class LancamentoCaixa : Entidade
     {
         public int Id { get; set; }
         //public Usuario Usuario { get; set; }
@@ -19,12 +19,9 @@ namespace OrdemExata.Dominio.Entidades
         public string Periodicidade { get; set; }
         public int Repeticao { get; set; }
 
-
-
-
-
-
-
-
+        public override void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

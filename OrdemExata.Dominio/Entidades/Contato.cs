@@ -1,9 +1,14 @@
 ﻿namespace OrdemExata.Dominio.Entidades
 {
-    public class Contato
+    public class Contato : Entidade
     {
         public int Id { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
+
+        public override void Validate()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

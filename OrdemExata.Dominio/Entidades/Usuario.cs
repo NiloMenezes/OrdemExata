@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace OrdemExata.Dominio.Entidades
 {
-    public class Usuario
+    public class Usuario : Entidade
     {
         //pr tab tab
         public int Id { get; set; }
@@ -19,5 +19,21 @@ namespace OrdemExata.Dominio.Entidades
         /// Um usuário pode ter 0 ou muitos pedidos.
         /// </summary>
         public ICollection<Pedido> Pedidos { get; set; }
+
+        public override void Validate()
+        {
+            if (string.IsNullOrEmpty(Nome))
+            {
+                AdicionarCritica("Crítica - O nome deve estar preenchido");
+            }
+            if (string.IsNullOrEmpty(Login))
+            {
+                AdicionarCritica("Crítica - O login deve estar preenchido");
+            }
+            if (string.IsNullOrEmpty(Senha))
+            {
+                AdicionarCritica("Crítica - A senha deve estar preenchido");
+            }
+        }
     }
 }
