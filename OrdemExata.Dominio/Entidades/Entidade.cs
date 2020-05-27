@@ -6,7 +6,7 @@ namespace OrdemExata.Dominio.Entidades
     public abstract class Entidade
     {
         //Implementação das regras do negócio.
-        public List<string> _mensagemValidacao { get; set; }
+        private List<string> _mensagemValidacao { get; set; }
         private List<string> mensagemValidacao 
         {
             //É uma propriedade de SOMENTE LEITURA, logo NÃO tem SET

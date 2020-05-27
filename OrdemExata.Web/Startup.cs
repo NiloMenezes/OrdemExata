@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OrdemExata.Repositorio.Contexto;
 
 namespace OrdemExata.Web
 {
@@ -12,7 +13,13 @@ namespace OrdemExata.Web
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder(); //Ivanilo
+            //O optional para informar que o arquivo NÃO é opcional (sempre referenciado)
+            //reloadOnChange -> Sempre que o config.json for modificado ele será recarregado 
+            builder.AddJsonFile("config.json", optional: false, reloadOnChange: true); //Ivanilo
+
+            //Configuration = configuration; Ivanilo
+            Configuration = builder.Build(); //Ivanilo
         }
 
         public IConfiguration Configuration { get; }
@@ -22,7 +29,13 @@ namespace OrdemExata.Web
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            // In production, the Angular files will be served from this directory
+            var connectionString = Configuration.GetConnectionString("OrdemExataDB");      //Ivanilo                                                 
+            services.AddDbContext<OrdemExataContexto>(option =>                                                                                //Ivanilo
+                                                            option.UseLazyLoadingProxies()                                                     //Ivanilo
+                                                            .UseMySql(connectionString,                                                        //Ivanilo
+                                                                                        m => m.MigrationsAssembly("OrdemExata.Repositorio"))); //Ivanilo
+            
+                // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";

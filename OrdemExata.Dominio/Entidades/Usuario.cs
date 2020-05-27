@@ -18,7 +18,7 @@ namespace OrdemExata.Dominio.Entidades
         /// <summary>
         /// Um usuário pode ter 0 ou muitos pedidos.
         /// </summary>
-        public ICollection<Pedido> Pedidos { get; set; }
+        public virtual ICollection<Pedido> Pedidos { get; set; }
 
         public override void Validate()
         {

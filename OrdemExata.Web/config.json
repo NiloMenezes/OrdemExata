@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "SqlServerConnection": "",
+    "OrdemExataDB": "Server=localhost;Database=OrdemExataDB;Uid=root;Pwd=admin;"
+  }
+}

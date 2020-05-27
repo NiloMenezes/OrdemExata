@@ -11,7 +11,11 @@ namespace OrdemExata.Dominio.Entidades
         public DateTime Data { get; set; }
         public DateTime DataEntrega { get; set; }
         public int CaixaId { get; set; }
+
+        //O primeiro nome de 'UsuarioId' deve ser igual ao nome da propriedade de mapeamento 'Usuario' e a segunda parte 'Id' é a chave primaria da classe Usuario 
         public int UsuarioId { get; set; }
+        public virtual Usuario Usuario { get; set; } //Propriedade de mapeamento
+
         public int FornecedorID { get; set; }
 
 
@@ -33,6 +37,11 @@ namespace OrdemExata.Dominio.Entidades
             if (!ItensPedidos.Any()) 
             {
                 AdicionarCritica("Critica - Pedido não pode ficar sem itens de pedido");
+            }
+
+            if (FormaPagamentoId == 0) 
+            {
+                AdicionarCritica("Critica - Não foi informado a forma de pagamento");
             }
 
             //if (CaixaId == 0)
