@@ -7,11 +7,14 @@
         public string Identificacao{ get; set; } //CPF ou CNPJ
         public string Descicao { get; set; }
         public string Contato { get; set; }
-        public int EnderecoId { get; set; }
+        //public int EnderecoId { get; set; }
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if (string.IsNullOrEmpty(Nome))
+            {
+                AdicionarCritica("Crítica - O nome deve estar preenchido");
+            }
         }
     }
 }

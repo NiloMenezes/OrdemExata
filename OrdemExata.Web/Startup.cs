@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OrdemExata.Dominio.Contratos;
 using OrdemExata.Repositorio.Contexto;
+using OrdemExata.Repositorio.Repositorios;
 
 namespace OrdemExata.Web
 {
@@ -34,8 +36,15 @@ namespace OrdemExata.Web
                                                             option.UseLazyLoadingProxies()                                                     //Ivanilo
                                                             .UseMySql(connectionString,                                                        //Ivanilo
                                                                                         m => m.MigrationsAssembly("OrdemExata.Repositorio"))); //Ivanilo
-            
-                // In production, the Angular files will be served from this directory
+
+
+            //Fazer para todos os repositorios
+            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>(); //Ivanilo
+            //services.AddScoped<IPedidoRepositorio, PedidoRepositorio>(); //Ivanilo
+
+
+
+            // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";

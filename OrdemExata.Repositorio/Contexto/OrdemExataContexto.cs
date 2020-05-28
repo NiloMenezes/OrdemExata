@@ -11,10 +11,7 @@ namespace OrdemExata.Repositorio.Contexto
         //Configurar todos DbSet para todas as classes
         //Os nome 'Usuarios', 'Fornecedores', 'Pedidos' são os mesmos nomes nas tabelas do banco de dados
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Fornecedor> Fornecedores { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
-        public DbSet<FormaPagamento> FormasPagamento { get; set; }
-        //Fazer com todos
         
         public OrdemExataContexto(DbContextOptions options) : base(options)
         {
@@ -25,9 +22,16 @@ namespace OrdemExata.Repositorio.Contexto
         {
             //Classes de mapeamento
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
-            modelBuilder.ApplyConfiguration(new FornecedorConfiguration());
-            modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
+            modelBuilder.ApplyConfiguration(new PedidoConfiguration());
 
+
+            ////Aplicar as classes de configuração (OrdemExtra.Dominio -> ObjetosDeValor), mas pode fazer também com classes
+            ////.HasData -> 'Têm dados'
+            //modelBuilder.Entity<FormaPagamento>().HasData(
+            //    new FormaPagamento() { Id = 1, Nome = "Boleto", Descricao = "Forma de Pagamento Boleto" },
+            //    new FormaPagamento() { Id = 2, Nome = "Cartão de Crédito", Descricao = "Forma de Pagamento Cartão de Crédito" },
+            //    new FormaPagamento() { Id = 3, Nome = "Depósito", Descricao = "Forma de Pagamento Depósito" });
+            
             base.OnModelCreating(modelBuilder);
         }
     }

@@ -7,7 +7,7 @@ namespace OrdemExata.Dominio.Entidades
     {
         public int Id { get; set; }
         //public Usuario Usuario { get; set; }
-        public string Descriacao { get; set; }
+        public string Descricao { get; set; }
         public decimal  ValorRecebido { get; set; }
         public decimal ValorAReceber { get; set; }
         public DateTime DataRecebido { get; set; }
@@ -21,7 +21,10 @@ namespace OrdemExata.Dominio.Entidades
 
         public override void Validate()
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(Descricao))
+            {
+                AdicionarCritica("Crítica - O descricao deve estar preenchido");
+            }
         }
     }
 }

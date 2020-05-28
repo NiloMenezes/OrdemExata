@@ -8,7 +8,10 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if (string.IsNullOrEmpty(Descricao))
+            {
+                AdicionarCritica("Crítica - O descricao deve estar preenchido");
+            }
         }
     }
 }

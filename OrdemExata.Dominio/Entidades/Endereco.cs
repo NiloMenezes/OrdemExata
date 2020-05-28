@@ -11,7 +11,10 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if (string.IsNullOrEmpty(CEP))
+            {
+                AdicionarCritica("Crítica - O CEP deve estar preenchido");
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 {
   "ConnectionStrings": {
     "SqlServerConnection": "",
-    "OrdemExataDB": "Server=localhost;Database=OrdemExataDB;Uid=root;Pwd=admin;"
+    //"OrdemExataDB": "Server=localhost;Database=OrdemExataDB;Uid=root;Pwd=admin;"
+    "OrdemExataDB": "Database=testenilo;Data Source=testenilo.mysql.dbaas.com.br;User Id=testenilo;Password=Nilo123;Allow User Variables=True; Max Pool Size=20;"
   }
 }

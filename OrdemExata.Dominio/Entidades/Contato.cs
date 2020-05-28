@@ -4,13 +4,13 @@
     {
         public int Id { get; set; }
         public string Email { get; set; }
-        public string Telefone { get; set; }
+        //public int ContatoId { get; set; }
 
         public override void Validate()
         {
-            if (string.IsNullOrEmpty(Telefone))
+            if (string.IsNullOrEmpty(Email))
             {
-                AdicionarCritica("Telefone não foi informado");
+                AdicionarCritica("Email não foi informado");
             }
         }
     }

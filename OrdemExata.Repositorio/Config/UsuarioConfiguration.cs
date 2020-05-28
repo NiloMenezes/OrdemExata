@@ -16,11 +16,12 @@ namespace OrdemExata.Repositorio.Config
                 .Property(u => u.Nome)
                 .IsRequired()
                 .HasMaxLength(20);
+
             builder
                 .Property(u => u.Sobrenome)
                 .IsRequired()
-                .HasMaxLength(50)
-                .HasColumnType("varchar");
+                .HasMaxLength(50);
+                //.HasColumnType("varchar");
 
             builder
                 .Property(u => u.Senha)
@@ -28,21 +29,12 @@ namespace OrdemExata.Repositorio.Config
                 .HasMaxLength(400); //Senha criptografada
 
             builder
-                .Property(u => u.ContatoId)
-                .IsRequired();
-
-            builder
                 .HasMany(u => u.Pedidos)
                 .WithOne(p => p.Usuario);
-
-
-
 
             //builder
             //    .Property(u => u.Data)
             //    .IsRequired();
-
-            
         }
     }
 }

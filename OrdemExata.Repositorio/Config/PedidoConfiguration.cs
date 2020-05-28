@@ -10,11 +10,10 @@ namespace OrdemExata.Repositorio.Config
         {
             builder.HasKey(p => p.Id);
 
-            //Utilizar o padrão Fluent
-            builder
-                .HasOne(p => p.Usuario);
-            
-            
+
+            ////Para cada pedido uma unica forma de pagamento
+            //builder
+            //    .HasOne(p => p.FormaPagamento);
         }
     }
 }

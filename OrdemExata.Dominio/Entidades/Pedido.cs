@@ -8,7 +8,6 @@ namespace OrdemExata.Dominio.Entidades
     public class Pedido : Entidade
     {
         public int Id { get; set; }
-        public DateTime Data { get; set; }
         public DateTime DataEntrega { get; set; }
         public int CaixaId { get; set; }
 
@@ -16,16 +15,16 @@ namespace OrdemExata.Dominio.Entidades
         public int UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; } //Propriedade de mapeamento
 
-        public int FornecedorID { get; set; }
+        //public int FornecedorID { get; set; }
 
 
-        public int FormaPagamentoId { get; set; }
-        public FormaPagamento FormaPagamento { get; set; }
+        //public int FormaPagamentoId { get; set; }
+        //public FormaPagamento FormaPagamento { get; set; }
 
         /// <summary>
         /// Pedido deve ter 1 ou muitos item(ns) de pedido(s)
         /// </summary>
-        public ICollection<ItemPedido> ItensPedidos { get; set; }
+        //public ICollection<ItemPedido> ItensPedidos { get; set; }
 
 
         //Coloca TODAS as regras do negócio
@@ -33,16 +32,16 @@ namespace OrdemExata.Dominio.Entidades
         {
             LimparMensagemValidacao();
 
-            //Um pedido NÃO pode ter nenhum item, logo a classe ItensPedidos não pode ser vazia
-            if (!ItensPedidos.Any()) 
-            {
-                AdicionarCritica("Critica - Pedido não pode ficar sem itens de pedido");
-            }
+            ////Um pedido NÃO pode ter nenhum item, logo a classe ItensPedidos não pode ser vazia
+            //if (!ItensPedidos.Any()) 
+            //{
+            //    AdicionarCritica("Critica - Pedido não pode ficar sem itens de pedido");
+            //}
 
-            if (FormaPagamentoId == 0) 
-            {
-                AdicionarCritica("Critica - Não foi informado a forma de pagamento");
-            }
+            //if (FormaPagamentoId == 0) 
+            //{
+            //    AdicionarCritica("Critica - Não foi informado a forma de pagamento");
+            //}
 
             //if (CaixaId == 0)
             //{

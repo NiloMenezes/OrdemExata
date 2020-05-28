@@ -8,7 +8,10 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if (string.IsNullOrEmpty(Operadora))
+            {
+                AdicionarCritica("Crítica - O operadora deve estar preenchido");
+            }
         }
     }
 }

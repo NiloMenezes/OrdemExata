@@ -1,39 +1,50 @@
 ﻿using OrdemExata.Dominio.Contratos;
+using OrdemExata.Repositorio.Contexto;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace OrdemExata.Repositorio.Repositorios
 {
     public class BaseRepositorio<TEntity> : IBaseRepositorio<TEntity> where TEntity : class
     {
-        //ct tab tab
-        public BaseRepositorio()
-        {
 
+        //metodo somente leitura
+        protected readonly OrdemExataContexto OrdemExataContexto;
+
+        //ct tab tab
+        public BaseRepositorio(OrdemExataContexto ordemExataContexto)
+        {
+            OrdemExataContexto = ordemExataContexto;
         }
         public void Adicionar(TEntity entity)
         {
-            throw new System.NotImplementedException();
+            OrdemExataContexto.Set<TEntity>().Add(entity);
+            OrdemExataContexto.SaveChanges();
         }
 
         public TEntity ObterPorId(string id)
         {
-            throw new System.NotImplementedException();
+            return OrdemExataContexto.Set<TEntity>().Find(id);
         }
         public IEnumerable<TEntity> ObterTodos()
         {
-            throw new System.NotImplementedException();
+            return OrdemExataContexto.Set<TEntity>().ToList();
         }
         public void Atualizar(TEntity entity)
         {
-            throw new System.NotImplementedException();
+            OrdemExataContexto.Set<TEntity>().Update(entity);
+            OrdemExataContexto.SaveChanges();
         }
         public void Remover(TEntity entity)
         {
-            throw new System.NotImplementedException();
+            OrdemExataContexto.Remove(entity);
+            OrdemExataContexto.SaveChanges();
         }
+
+        //Serve para descartar o BaseRepositorio da memória
         public void Dispose()
         {
-            throw new System.NotImplementedException();
+            OrdemExataContexto.Dispose();
         }
     }
 }

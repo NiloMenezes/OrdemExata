@@ -9,8 +9,8 @@ namespace OrdemExata.Dominio.Entidades
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
-        public int ContatoId { get; set; }
-        public int EnderecoId { get; set; }
+        //public int ContatoId { get; set; }
+        //public int EnderecoId { get; set; }
         public string Login { get; set; }
         public string Senha { get; set; }
 

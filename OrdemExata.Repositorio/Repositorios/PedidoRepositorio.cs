@@ -4,9 +4,9 @@ using OrdemExata.Repositorio.Contexto;
 
 namespace OrdemExata.Repositorio.Repositorios
 {
-    public class UsuarioRepositorio : BaseRepositorio<Usuario>, IUsuarioRepositorio
+    public class PedidoRepositorio : BaseRepositorio<Pedido>, IPedidoRepositorio
     {
-        public UsuarioRepositorio(OrdemExataContexto ordemExataContexto) : base(ordemExataContexto)
+        public PedidoRepositorio(OrdemExataContexto ordemExataContexto) : base(ordemExataContexto)
         {
         }
     }
