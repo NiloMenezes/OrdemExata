@@ -45,5 +45,21 @@ namespace OrdemExata.Web.Controllers
                 return BadRequest(ex.ToString());
             }
         }
+
+        [HttpPost("VerificarUsuario")]
+        public IActionResult VerificarUsuario([FromBody] Usuario usuario)
+        {
+            try
+            {
+                var usuarioRetorno = _usuarioRepositorio.Obter(usuario.Login, usuario.Senha);
+                if (usuarioRetorno != null)
+                    return Ok(usuario);
+                return BadRequest("Usuário inaválido.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.ToString());
+            }
+        }
     }
 }

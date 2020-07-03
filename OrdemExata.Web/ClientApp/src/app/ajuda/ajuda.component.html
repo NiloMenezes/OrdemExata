@@ -1,0 +1,2062 @@
+<div class="container-fluid">
+  <h1>container-fluid: toda tela (app.component.html)</h1>
+</div>
+<hr />
+<div class="container">
+  <h1>container: até a borda (app.component.html)</h1>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-12"><h1>col dentro do row e todo row dentro container (-fluid)</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-6"><h1>col de 6</h1></div>
+    <div class="col-6"><h1>col de 6</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-4"><h1>col de 4</h1></div>
+    <div class="col-4 offset-4"><h1>col de 4</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-6"><h1>col de 6</h1></div>
+    <div class="col-2"><h1>col de 2</h1></div>
+    <div class="col-2"><h1>col de 2</h1></div>
+    <div class="col-2"><h1>col de 2</h1></div>
+  </div>
+  <div class="row">
+    <div class="col"><h1>col de 3,5</h1></div>
+    <div class="col-5"><h1>col de 5</h1></div>
+    <div class="col"><h1>col de 3,5</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      Nível 1 - col 12
+      <div class="row">
+        <div class="col-6">
+          Nível 2 - col 6
+          <div class="row">
+            <div class="col-3">Nível 3 - col 3</div>
+            <div class="col-3">Nível 3 - col 3</div>
+            <div class="col-3">Nível 3 - col 3</div>
+            <div class="col-3">Nível 3 - col 3</div>
+          </div>
+        </div>
+        <div class="col-6">
+          Nível 2 - col 6
+          <div class="row">
+            <div class="col-4">Nível 3 - col 4</div>
+            <div class="col-4">Nível 3 - col 4</div>
+            <div class="col-4">Nível 3 - col 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12"><h1>Sempre da menor tela para a maior tela (Mobile First)</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-12"><h1> sm < md < lg < xl</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-4 col-md-6"><h1>col de 4 que vira 6 (MD)</h1></div>
+    <div class="col-8 col-md-6"><h1>col de 8 que vira 6 (MD)</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-sm"><h1>col de 12 que vira 4 (SM)</h1></div>
+    <div class="col-sm-4"><h1>col de 12 que vira 4 (SM)</h1></div>
+    <div class="col-sm"><h1>col de 12 que vira 4 (SM)</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-12"><h1>Pode ter row > 12, mas pula linha</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-4"><h1>col de 12 que vira 4 (SM)</h1></div>
+    <div class="col-6 col-sm-8"><h1>col de 6 que vira 8 (SM)</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-md-4"><h1>col-6 col-md-4 (MD)</h1></div>
+    <div class="col-6 col-md-4"><h1>col-6 col-md-4 (MD)</h1></div>
+    <div class="col-6 col-md-4"><h1>col-6 col-md-4 (MD)</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4"><h1>col-sm-4 (SM)</h1></div>
+    <div class="col-sm-4 offset-sm-4"><h1>col-sm-4 offset-sm-4 (SM)</h1></div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="d-flex bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+  </div>
+  <div class="d-inline-flex bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+  </div>
+  <div class="d-inline-flex bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+  </div>
+  <div class="d-flex justify-content-center bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex justify-content-around bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex justify-content-between bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex justify-content-end bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex flex-row-reverse bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex flex-column bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex flex-column-reverse bg">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex align-items-center bg" style="height: 200px">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex align-items-end bg" style="height: 200px">
+    <div class="bg p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex bg">
+    <div class="bg flex-fill p-2">1</div>
+    <div class="bg flex-fill p-2">2</div>
+    <div class="bg flex-fill p-2">3</div>
+  </div>
+  <div class="d-flex bg">
+    <div class="bg flex-fill p-2">111111111111111111111111111111111</div>
+    <div class="bg flex-fill p-2">2</div>
+    <div class="bg flex-fill p-2">3</div>
+  </div>
+  <div class="d-flex bg">
+    <div class="bg flex-grow-1 p-2">1</div>
+    <div class="bg p-2">2</div>
+    <div class="bg p-2">3</div>
+  </div>
+  <div class="d-flex bg">
+    <div class="bg flex-shrink-1 p-2">1</div>
+    <div class="bg p-2">22222222222222222</div>
+    <div class="bg p-2">33333333333333333333333333333333333333333333333</div>
+  </div>
+  <div class="d-flex flex-wrap bg">
+    <div class="bg p-2">Item 1</div>
+    <div class="bg p-2">Item 2</div>
+    <div class="bg p-2">Item 3</div>
+    <div class="bg p-2">Item 4</div>
+    <div class="bg p-2">Item 5</div>
+    <div class="bg p-2">Item 6</div>
+    <div class="bg p-2">Item 7</div>
+    <div class="bg p-2">Item 8</div>
+    <div class="bg p-2">Item 9</div>
+    <div class="bg p-2">Item 10</div>
+    <div class="bg p-2">Item 11</div>
+    <div class="bg p-2">Item 12</div>
+    <div class="bg p-2">Item 13</div>
+    <div class="bg p-2">Item 14</div>
+    <div class="bg p-2">Item 15</div>
+    <div class="bg p-2">Item 16</div>
+    <div class="bg p-2">Item 17</div>
+    <div class="bg p-2">Item 18</div>
+    <div class="bg p-2">Item 19</div>
+    <div class="bg p-2">Item 20</div>
+    <div class="bg p-2">Item 21</div>
+    <div class="bg p-2">Item 22</div>
+    <div class="bg p-2">Item 23</div>
+    <div class="bg p-2">Item 24</div>
+    <div class="bg p-2">Item 25</div>
+  </div>
+  <div class="d-flex bg" style="overflow: auto">
+    <div class="bg p-2">Item 1</div>
+    <div class="bg p-2">Item 2</div>
+    <div class="bg p-2">Item 3</div>
+    <div class="bg p-2">Item 4</div>
+    <div class="bg p-2">Item 5</div>
+    <div class="bg p-2">Item 6</div>
+    <div class="bg p-2">Item 7</div>
+    <div class="bg p-2">Item 8</div>
+    <div class="bg p-2">Item 9</div>
+    <div class="bg p-2">Item 10</div>
+    <div class="bg p-2">Item 11</div>
+    <div class="bg p-2">Item 12</div>
+    <div class="bg p-2">Item 13</div>
+    <div class="bg p-2">Item 14</div>
+    <div class="bg p-2">Item 15</div>
+    <div class="bg p-2">Item 16</div>
+    <div class="bg p-2">Item 17</div>
+    <div class="bg p-2">Item 18</div>
+    <div class="bg p-2">Item 19</div>
+    <div class="bg p-2">Item 20</div>
+    <div class="bg p-2">Item 21</div>
+    <div class="bg p-2">Item 22</div>
+    <div class="bg p-2">Item 23</div>
+    <div class="bg p-2">Item 24</div>
+    <div class="bg p-2">Item 25</div>
+  </div>
+  <div class="d-flex bg" style="overflow: hidden">
+    <div class="bg p-2">Item 1</div>
+    <div class="bg p-2">Item 2</div>
+    <div class="bg p-2">Item 3</div>
+    <div class="bg p-2">Item 4</div>
+    <div class="bg p-2">Item 5</div>
+    <div class="bg p-2">Item 6</div>
+    <div class="bg p-2">Item 7</div>
+    <div class="bg p-2">Item 8</div>
+    <div class="bg p-2">Item 9</div>
+    <div class="bg p-2">Item 10</div>
+    <div class="bg p-2">Item 11</div>
+    <div class="bg p-2">Item 12</div>
+    <div class="bg p-2">Item 13</div>
+    <div class="bg p-2">Item 14</div>
+    <div class="bg p-2">Item 15</div>
+    <div class="bg p-2">Item 16</div>
+    <div class="bg p-2">Item 17</div>
+    <div class="bg p-2">Item 18</div>
+    <div class="bg p-2">Item 19</div>
+    <div class="bg p-2">Item 20</div>
+    <div class="bg p-2">Item 21</div>
+    <div class="bg p-2">Item 22</div>
+    <div class="bg p-2">Item 23</div>
+    <div class="bg p-2">Item 24</div>
+    <div class="bg p-2">Item 25</div>
+  </div>
+  <div class="d-flex flex-wrap bg">
+    <div class="bg p-2">Item 1</div>
+    <div class="bg p-2">Item 2</div>
+    <div class="bg p-2">Item 3</div>
+    <div class="bg p-2">Item 4</div>
+    <div class="bg p-2">Item 5</div>
+    <div class="bg p-2">Item 6</div>
+    <div class="bg p-2">Item 7</div>
+    <div class="bg p-2">Item 8</div>
+    <div class="bg p-2">Item 9</div>
+    <div class="bg p-2">Item 10</div>
+    <div class="bg p-2">Item 11</div>
+    <div class="bg p-2">Item 12</div>
+    <div class="bg p-2">Item 13</div>
+    <div class="bg p-2">Item 14</div>
+    <div class="bg p-2">Item 15</div>
+    <div class="bg p-2">Item 16</div>
+    <div class="bg p-2">Item 17</div>
+    <div class="bg p-2">Item 18</div>
+    <div class="bg p-2">Item 19</div>
+    <div class="bg p-2">Item 20</div>
+    <div class="bg p-2">Item 21</div>
+    <div class="bg p-2">Item 22</div>
+    <div class="bg p-2">Item 23</div>
+    <div class="bg p-2">Item 24</div>
+    <div class="bg p-2">Item 25</div>
+  </div>
+  <div class="d-flex flex-wrap-reverse bg">
+    <div class="bg p-2">Item 1</div>
+    <div class="bg p-2">Item 2</div>
+    <div class="bg p-2">Item 3</div>
+    <div class="bg p-2">Item 4</div>
+    <div class="bg p-2">Item 5</div>
+    <div class="bg p-2">Item 6</div>
+    <div class="bg p-2">Item 7</div>
+    <div class="bg p-2">Item 8</div>
+    <div class="bg p-2">Item 9</div>
+    <div class="bg p-2">Item 10</div>
+    <div class="bg p-2">Item 11</div>
+    <div class="bg p-2">Item 12</div>
+    <div class="bg p-2">Item 13</div>
+    <div class="bg p-2">Item 14</div>
+    <div class="bg p-2">Item 15</div>
+    <div class="bg p-2">Item 16</div>
+    <div class="bg p-2">Item 17</div>
+    <div class="bg p-2">Item 18</div>
+    <div class="bg p-2">Item 19</div>
+    <div class="bg p-2">Item 20</div>
+    <div class="bg p-2">Item 21</div>
+    <div class="bg p-2">Item 22</div>
+    <div class="bg p-2">Item 23</div>
+    <div class="bg p-2">Item 24</div>
+    <div class="bg p-2">Item 25</div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <h1>H1 teste</h1>
+  <p class="h1"> H1 teste (p class = h1)</p>
+  <h1>H1 <small>teste small</small></h1>
+  <hr />
+  <h2>H2 teste</h2>
+  <p class="h2"> H2 teste (p class = h2)</p>
+  <h2>H2 <small>teste small</small></h2>
+  <hr />
+  <h3>H3 teste</h3>
+  <p class="h3"> H3 teste (p class = h3)</p>
+  <h3>H3 <small>teste small</small></h3>
+  <hr />
+  <h4>H4 teste</h4>
+  <p class="h4"> H4 teste (p class = h4)</p>
+  <h4>H4 <small>teste small</small></h4>
+  <hr />
+  <h5>H5 teste</h5>
+  <p class="h5"> H5 teste (p class = h5)</p>
+  <h5>H5 <small>teste small</small></h5>
+  <hr />
+  <h6>H6 teste</h6>
+  <p class="h6"> H6 teste (p class = h6)</p>
+  <h6>H6 <small>teste small</small></h6>
+  <hr />
+  <p>Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</p>
+  <p class="lead">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</p>
+  <hr />
+  <p><strong>Loren</strong> hgasd jhasdj</p>
+  <p><em>Loren</em> hgasd jhasdj</p>
+  <p><u>Loren</u> hgasd jhasdj</p>
+  <p><abbr title="hajshjhasjhsaj">Loren</abbr> hgasd jhasdj</p>
+  <hr />
+  <p class="text-lowercase">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd</p>
+  <p class="text-uppercase">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd</p>
+  <p class="text-capitalize">Loren de hgasd jhasdj hjashd jhasd uhkasjd hasjkd</p>
+  <hr />
+  <p>Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd</p>
+  <p class="text-monospace">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd</p>
+  <p class="font-italic">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd</p>
+  <p class="font-weight-light">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd</p>
+  <p class="font-weight-bold">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd</p>
+  <hr />
+  <p class="text-primary">text-primary</p>
+  <p class="text-secondary">text-secondary</p>
+  <p class="text-success">text-success</p>
+  <p class="text-danger">text-danger</p>
+  <p class="text-info">text-info</p>
+  <p class="text-warning">text-warning</p>
+  <p class="text-light bg-success">text-light bg-success</p>
+  <p class="text-white bg-success">text-white bg-success</p>
+  <p class="text-body">text-body</p>
+  <p class="text-muted">text-muted</p>
+  <p class="text-black-50 bg-success">text-black-50 (Transparente)</p>
+  <p class="text-white-50 bg-success">text-white-50 (Transparente)</p>
+  <br />
+  <hr />
+  <br />
+  <blockquote class="blockquote">
+    <p>Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</p>
+    <footer class="blockquote-footer">ghdasgjadggda sjhkahd <cite title="Professor">Professor</cite></footer>
+  </blockquote>
+  <hr />
+  <blockquote class="blockquote text-center">
+    <p>Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</p>
+    <footer class="blockquote-footer">ghdasgjadggda sjhkahd <cite title="Professor">Professor</cite></footer>
+  </blockquote>
+  <hr />
+  <blockquote class="blockquote text-right">
+    <p>Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</p>
+    <footer class="blockquote-footer">ghdasgjadggda sjhkahd <cite title="Professor">Professor</cite></footer>
+  </blockquote>
+  <br />
+  <hr />
+  <br />
+  <dl>
+    <dt>Titulo</dt>
+    <dd>Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</dd>
+    <dt>Titulo</dt>
+    <dd>Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</dd>
+    <dt>Titulo</dt>
+    <dd>Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</dd>
+  </dl>
+  <hr />
+  <dl class="row">
+    <dt class="col-sm-3">Titulo</dt>
+    <dd class="col-sm-9">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</dd>
+    <dt class="col-sm-3">Titulo</dt>
+    <dd class="col-sm-9">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</dd>
+    <dt class="col-sm-3">Titulo</dt>
+    <dd class="col-sm-9">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</dd>
+  </dl>
+  <br />
+  <hr />
+  <br />
+  <div class="text-wrap" style="width: 400px">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</div>
+  <hr />
+  <div class="text-truncate" style="width: 400px">Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha Loren hgasd jhasdj hjashd jhasd uhkasjd hasjkd hasgdh jhaksdhj agsdha.</div>
+</div>
+<br />
+<hr />
+<br />
+<img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" />
+<img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="img-fluid" />
+<img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="img-thumbnail" />
+<img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="img-fluid rounded" />
+<hr />
+<div class="container">
+  <div class="row">
+    <div class="col"><img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="img-fluid" /></div>
+    <div class="col"><img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="img-fluid" /></div>
+  </div>
+</div>
+<hr />
+<img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="rounded d-block mx-auto" style="width:256px" />
+<hr />
+<figure class="figure">
+  <img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="figure-img img-fluid rounded" />
+  <figcaption class="figture-caption">legenda da imagem</figcaption>
+</figure>
+<hr />
+<figure class="figure">
+  <img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="figure-img img-fluid rounded" />
+  <figcaption class="figture-caption text-right">legenda da imagem</figcaption>
+</figure>
+<hr />
+<figure class="figure">
+  <img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="figure-img img-fluid rounded" />
+  <figcaption class="figture-caption text-center">legenda da imagem</figcaption>
+</figure>
+<br />
+<hr />
+<br />
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="table-danger">Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Joao</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pedro</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Maria</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th></th>
+      <th>Soma</th>
+      <th>36</th>
+    </tr>
+  </tfoot>
+</table>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="alert alert-primary">hgjhagsd asjdg ashdg</div>
+  <div class="alert alert-info">
+    <h4>Titulo</h4>
+    <p>hahshd gjsd hjds gsad jhasgdhj </p>
+  </div>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    ggsjdghjagsdh bhjds hjgasjd
+    <button class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times;</span></button>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col"><button class="btn btn-primary">ok</button></div>
+    <div class="col"><button class="btn btn-secondary">ok</button></div>
+    <div class="col"><button class="btn btn-success">ok</button></div>
+    <div class="col"><button class="btn btn-danger">ok</button></div>
+    <div class="col"><button class="btn btn-info">ok</button></div>
+    <div class="col"><button class="btn btn-warning">ok</button></div>
+    <div class="col"><button class="btn btn-light">ok</button></div>
+    <div class="col"><button class="btn btn-dark">ok</button></div>
+    <div class="col"><button class="btn btn-link">ok</button></div>
+  </div>
+  <div class="row">
+    <div class="col"><button class="btn btn-outline-danger">ok</button></div>
+    <div class="col"><button class="btn btn-outline-info">ok</button></div>
+    <div class="col"><button class="btn btn-outline-warning">ok</button></div>
+  </div>
+  <div class="row">
+    <div class="col"><button class="btn btn-danger">ok</button></div>
+    <div class="col"><button class="btn btn-info btn-lg">ok</button></div>
+    <div class="col"><button class="btn btn-warning btn-sm">ok</button></div>
+  </div>
+  <div class="row">
+    <div class="col"><button class="btn btn-primary">ok</button></div>
+    <div class="col"><input type="button" class="btn btn-primary" value="ok"></div>
+    <div class="col"><a href="#" class="btn btn-primary">ok</a></div>
+  </div>
+  <div class="row">
+    <div class="col"><button class="btn btn-danger btn-block">ok</button></div>
+    <div class="col"><button class="btn btn-danger btn-block" disabled>ok</button></div>
+  </div>
+  <div class="row">
+    <div class="col"><button class="btn btn-primary">Caixa de Entrada <span class="badge badge-danger">5</span><span class="sr-only">Há 5 mensagens não lidas</span></button></div>
+  </div>
+</div>
+<hr />
+<span class="badge badge-danger">ok</span>
+<span class="badge badge-danger badge-pill">ok</span>
+<br />
+<hr />
+<br />
+<ul class="list-group">
+  <li class="list-group-item active">1</li>
+  <li class="list-group-item">2</li>
+  <li class="list-group-item">3</li>
+  <li class="list-group-item">4</li>
+</ul>
+<hr />
+<ul class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">1</a>
+  <a href="#" class="list-group-item list-group-item-action active">2</a>
+  <a href="#" class="list-group-item list-group-item-action">3</a>
+  <a href="#" class="list-group-item list-group-item-action">4</a>
+</ul>
+<hr />
+<ul class="list-group">
+  <button class="list-group-item list-group-item-action">1</button>
+  <button class="list-group-item list-group-item-action">2</button>
+  <button class="list-group-item list-group-item-action">3</button>
+  <button class="list-group-item list-group-item-action">4</button>
+</ul>
+<hr />
+<ul class="list-group list-group-flush">
+  <li class="list-group-item active">1</li>
+  <li class="list-group-item">2</li>
+  <li class="list-group-item">3</li>
+  <li class="list-group-item">4</li>
+</ul>
+<hr />
+<ul class="list-group list-group-flush list-group-horizontal-sm">
+  <li class="list-group-item active">1</li>
+  <li class="list-group-item">2</li>
+  <li class="list-group-item">3</li>
+  <li class="list-group-item">4</li>
+</ul>
+<hr />
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+          <span class="d-flex justify-content-between">
+            <h4>Titulo</h4>
+            <small>Há pouco</small>
+          </span>
+          <p>hasdhkas hkjasdh hkajshd jhkads hjkasd jkhadsjk jhasdhk jkhasdjkh jkhajdk jkhajk d hkadb mugadk msdbas dhb yasdg ya sdyvsaydysadavsdjv adjasdj av</p>
+          <small>jafds gsdja kjahsdjk jkahsd </small>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu</button>
+    <div class="dropdown-menu">
+      <h6 class="dropdown-header">Titulo</h6>
+      <a href="#" class="dropdown-item">1</a>
+      <a href="#" class="dropdown-item">2</a>
+      <div class="dropdown-divider"></div>
+      <h6 class="dropdown-header">Titulo</h6>
+      <a href="#" class="dropdown-item">3</a>
+    </div>
+  </div>
+</div>
+<br />
+<div class="container">
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu</button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item">1</button>
+      <button class="dropdown-item">2</button>
+      <button class="dropdown-item">3</button>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <form action="">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input class="form-control form-control-lg" type="email" name="email" id="email" />
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input class="form-control form-control-sm" type="email" name="email" id="email" />
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input class="form-control" type="email" name="email" id="email" readonly />
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <div class="form-control-plaintext">nilo123menezes@gmail.com</div>
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input class="form-control" type="email" name="email" id="email" />
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="password">Senha</label>
+      <input class="form-control" type="password" name="password" id="password" />
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="state">Estados</label>
+      <select name="state" id="state" class="form-control">
+        <option value="PE">PE</option>
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+      </select>
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="state">Estados</label>
+      <select name="state" id="state" class="form-control" size="4" multiple>
+        <option value="PE">PE</option>
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+      </select>
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="message">Mensagem</label>
+      <textarea class="form-control" cols="30" rows="5" type="password" name="message" id="message"></textarea>
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="file">Foto</label>
+      <input class="form-control-file" type="file" name="file" id="file" />
+    </div>
+    <hr />
+    <div class="form-group">
+      <label for="volume">Volume</label>
+      <input class="form-control-range" type="range" name="volume" id="volume" />
+    </div>
+    <hr />
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender1" id="gender-f1" value="F1" />
+        <label for="gender-f1" class="form-check-label">Feminino</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender1" id="gender-m1" value="M1" />
+        <label for="gender-m1" class="form-check-label">Masculino</label>
+      </div>
+    </div>
+    <hr />
+    <div class="form-group">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender2" id="gender-f2" value="F2" />
+        <label for="gender-f2" class="form-check-label">Feminino</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender2" id="gender-m2" value="M2" />
+        <label for="gender-m2" class="form-check-label">Masculino</label>
+      </div>
+    </div>
+    <hr />
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gender3" id="gender-f3" value="F3" />
+        <label for="gender-f3" class="form-check-label">Feminino</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="gender3" id="gender-m3" value="M3" />
+        <label for="gender-m3" class="form-check-label">Masculino</label>
+      </div>
+    </div>
+    <hr />
+    <div class="form-group">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="gender4" id="gender-f4" value="F4" />
+        <label for="gender-f4" class="form-check-label">Feminino</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="gender4" id="gender-m4" value="M4" />
+        <label for="gender-m4" class="form-check-label">Masculino</label>
+      </div>
+    </div>
+    <hr />
+    <button type="submit" class="btn btn-primary">salvar</button>
+  </form>
+</div>
+<hr />
+<div class="container">
+  <form action="">
+    <div class="row">
+      <div class="col"><input type="text" class="form-control" placeholder="Primeiro Nome" /></div>
+      <div class="col"><input type="text" class="form-control" placeholder="Sobrenome" /></div>
+    </div>
+  </form>
+</div>
+<hr />
+<div class="container">
+  <form action="">
+    <div class="form-row">
+      <div class="col"><input type="text" class="form-control" placeholder="Primeiro Nome" /></div>
+      <div class="col"><input type="text" class="form-control" placeholder="Sobrenome" /></div>
+    </div>
+  </form>
+</div>
+<hr />
+<div class="container">
+  <form action="">
+    <div class="form-row">
+      <div class="col form-group">
+        <label>Primeiro Nome</label>
+        <input type="text" class="form-control" placeholder="Primeiro Nome" />
+      </div>
+      <div class="col form-group">
+        <label>Sobrenome</label>
+        <input type="text" class="form-control" placeholder="Sobrenome" />
+      </div>
+    </div>
+  </form>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <form class="form-inline">
+    <label for="email">E-mail</label>
+    <input class="form-control" type="email" name="email" id="email" />
+    <label for="password">Senha</label>
+    <input class="form-control" type="password" name="password" id="password" />
+    <button type="submit" class="btn btn-primary">salvar</button>
+  </form>
+</div>
+<hr />
+<div class="container">
+  <form class="form-inline">
+    <label for="email">E-mail</label>
+    <input class="form-control mr-sm-2 mb-2" type="email" name="email" id="email" />
+    <label for="password">Senha</label>
+    <input class="form-control mr-sm-2 mb-2" type="password" name="password" id="password" />
+    <button type="submit" class="btn btn-primary mb-2">salvar</button>
+  </form>
+</div>
+<hr />
+<div class="container">
+  <form>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="email" name="email" id="email" />
+        <small class="text-muted">Digite com @</small>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="password" class="col-sm-2 col-form-label">Senha</label>
+      <div class="col-sm-10"><input class="form-control" type="password" name="password" id="password" /></div>
+    </div>
+
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-sm-2 col-form-label">Opção</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender6" id="gender-f6" value="F6" />
+            <label for="gender-f6" class="form-check-label">Feminino</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender6" id="gender-m6" value="M6" />
+            <label for="gender-m6" class="form-check-label">Masculino</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">salvar</button>
+      </div>
+    </div>
+  </form>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <form>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="email" name="email" id="email" required />
+      </div>
+      <small>javascrip node: aula 52 validação</small>
+    </div>
+    <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">salvar</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="container">
+  <form>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+      <div class="col-sm-10">
+        <input class="form-control is-valid" type="email" name="email" id="email" />
+        <div class="valid-tooltip">Tudo certo</div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+      <div class="col-sm-10">
+        <input class="form-control is-invalid" type="email" name="email" id="email" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">salvar</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="gender7" id="gender-f7" value="F7" />
+    <label for="gender-f7" class="form-check-label">Feminino</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="gender7" id="gender-m7" value="M7" />
+    <label for="gender-m7" class="form-check-label">Masculino</label>
+  </div>
+  <div class="custom-control custom-check">
+    <input class="custom-control-input" type="checkbox" name="gender8" id="gender-f8" value="F8" />
+    <label for="gender-f8" class="custom-control-label">Feminino</label>
+  </div>
+  <div class="custom-control custom-check">
+    <input class="custom-control-input" type="checkbox" name="gender8" id="gender-m8" value="M8" />
+    <label for="gender-m8" class="custom-control-label">Masculino</label>
+  </div>
+  <hr />
+  <div class="custom-control custom-switch">
+    <input class="custom-control-input" type="checkbox" name="switch" id="switch" value="F11" />
+    <label for="switch" class="custom-control-label">Feminino</label>
+  </div>
+  <hr />
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="gender9" id="gender-f9" value="F9" />
+    <label for="gender-f9" class="form-check-label">Feminino</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="gender9" id="gender-m9" value="M9" />
+    <label for="gender-m9" class="form-check-label">Masculino</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input class="custom-control-input" type="radio" name="gender10" id="gender-f10" value="F10" />
+    <label for="gender-f10" class="custom-control-label">Feminino</label>
+  </div>
+  <div class="custom-control custom-radio">
+    <input class="custom-control-input" type="radio" name="gender10" id="gender-m10" value="M10" />
+    <label for="gender-m10" class="custom-control-label">Masculino</label>
+  </div>
+  <hr />
+  <div class="form-group">
+    <label for="volume">Volume</label>
+    <input class="form-control-range" type="range" name="volume" id="volume" />
+  </div>
+  <div class="form-group">
+    <label for="volume">Volume</label>
+    <input class="custom-range" type="range" name="volume" id="volume" min="0" max="5" step="1" />
+  </div>
+  <hr />
+  <div class="form-group">
+    <label for="state">Estados</label>
+    <select name="state" id="state" class="form-control">
+      <option value="PE">PE</option>
+      <option value="SP">SP</option>
+      <option value="RJ">RJ</option>
+      <option value="RN">RN</option>
+    </select>
+  </div>
+  <hr />
+  <div class="form-group">
+    <label for="state">Estados</label>
+    <select name="state" id="state" class="custom-select">
+      <option value="PE">PE</option>
+      <option value="SP">SP</option>
+      <option value="RJ">RJ</option>
+      <option value="RN">RN</option>
+    </select>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">R$</span>
+    </div>
+    <input type="text" class="form-control" placeholder="0,00" />
+  </div>
+  <hr />
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="0" />
+    <div class="input-group-append">
+      <span class="input-group-text">,00</span>
+    </div>
+  </div>
+  <hr />
+  <div class="form-group">
+    <div class="input-group flex-nowrap">
+      <div class="input-group-prepend">
+        <div class="input-group-text"><input type="checkbox" /></div>
+      </div>
+      <input type="text" class="form-control" placeholder="0,00" />
+    </div>
+  </div>
+  <hr />
+  <div class="form-group">
+    <div class="input-group flex-nowrap">
+      <div class="input-group-prepend">
+        <div class="input-group-text"><input type="radio" /></div>
+      </div>
+      <input type="text" class="form-control" placeholder="0,00" />
+    </div>
+  </div>
+  <hr />
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="0" />
+    <div class="input-group-append">
+      <button type="button" class="btn btn-info">Add</button>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="media">
+    <img src="https://api.adorable.io/avatars/64/abott@adorable.io.png" alt="avatar" class="mr-3" />
+    <div class="media-body">
+      <h6 class="mb-0">ghjghj ghf hghjhg hghj hjg hgj</h6>
+      hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg
+    </div>
+  </div>
+  <hr />
+  <div class="media">
+    <div class="media-body">
+      <h6 class="mb-0">ghjghj ghf hghjhg hghj hjg hgj</h6>
+      hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg
+    </div>
+    <img src="https://api.adorable.io/avatars/64/abott@adorable.io.png" alt="avatar" class="mr-3" />
+  </div>
+  <hr />
+  <div class="media">
+    <img src="https://api.adorable.io/avatars/64/abott@adorable.io.png" alt="avatar" class="mr-3 rounded" />
+    <div class="media-body">
+      <h6 class="mb-0">ghjghj ghf hghjhg hghj hjg hgj</h6>
+      hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg
+    </div>
+  </div>
+  <hr />
+  <div class="media">
+    <img src="https://api.adorable.io/avatars/64/abott@adorable.io.png" alt="avatar" class="mr-3 rounded-circle" />
+    <div class="media-body">
+      <h6 class="mb-0">ghjghj ghf hghjhg hghj hjg hgj</h6>
+      hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg
+    </div>
+  </div>
+  <hr />
+  <div class="media">
+    <img src="https://api.adorable.io/avatars/64/abott@adorable.io.png" alt="avatar" class="mr-3 rounded-circle align-self-center" />
+    <div class="media-body">
+      <h6 class="mb-0">ghjghj ghf hghjhg hghj hjg hgj</h6>
+      hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg
+    </div>
+  </div>
+  <div class="media">
+    <img src="https://api.adorable.io/avatars/64/abott@adorable.io.png" alt="avatar" class="mr-3 rounded-circle align-self-end" />
+    <div class="media-body">
+      <h6 class="mb-0">ghjghj ghf hghjhg hghj hjg hgj</h6>
+      hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg
+    </div>
+  </div>
+  <hr />
+  <div class="media">
+    <img src="https://api.adorable.io/avatars/64/abott@adorable.io.png" alt="avatar" class="mr-3 rounded-circle" />
+    <div class="media-body">
+      <h6 class="mb-0">ghjghj ghf hghjhg hghj hjg hgj</h6>
+      hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg
+      <hr />
+      <div class="media">
+        <img src="https://api.adorable.io/avatars/64/abott@adorable.io.png" alt="avatar" class="mr-3 rounded-circle" />
+        <div class="media-body">
+          <h6 class="mb-0">ghjghj ghf hghjhg hghj hjg hgj</h6>
+          hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+
+<div class="container">
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active">Home</li>
+    </ol>
+  </nav>
+  <hr />
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">Home</li>
+      <li class="breadcrumb-item active">Cursos</li>
+    </ol>
+  </nav>
+  <hr />
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Cursos</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Java</a>
+          <a href="#" class="dropdown-item active">C#</a>
+          <a href="#" class="dropdown-item">Asp</a>
+        </div>
+      </li>
+      <li class="breadcrumb-item active">C#</li>
+    </ol>
+  </nav>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <nav class="nav">
+    <a class="nav-link" href="#">Home</a>
+    <a class="nav-link" href="#">Cursos</a>
+    <a class="nav-link" href="#">C#</a>
+  </nav>
+  <hr />
+  <ul class="nav">
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+  </ul>
+  <hr />
+  <ul class="nav justify-content-center">
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+  </ul>
+  <hr />
+  <ul class="nav justify-content-end">
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+  </ul>
+  <hr />
+  <ul class="nav flex-column">
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+  </ul>
+  <hr />
+  <nav class="nav nav-tabs">
+    <a class="nav-link active" href="#">Home</a>
+    <a class="nav-link" href="#">Cursos</a>
+    <a class="nav-link" href="#">C#</a>
+  </nav>
+  <hr />
+  <nav class="nav nav-pills">
+    <a class="nav-link active" href="#">Home</a>
+    <a class="nav-link" href="#">Cursos</a>
+    <a class="nav-link" href="#">C#</a>
+  </nav>
+  <hr />
+  <ul class="nav nav-fill">
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+  </ul>
+  <hr />
+  <ul class="nav nav-fill nav-tabs">
+    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+  </ul>
+  <hr />
+  <ul class="nav nav-fill nav-pills">
+    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+  </ul>
+  <hr />
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Cursos</a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">1</a>
+        <a href="#" class="dropdown-item">2</a>
+        <a href="#" class="dropdown-item">3</a>
+      </div>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+  </ul>
+  <hr />
+  <nav class="nav nav-tabs">
+    <a class="nav-link active" href="#tab-1" data-toggle="tab">Home</a>
+    <a class="nav-link" href="#tab-2" data-toggle="tab">Cursos</a>
+    <a class="nav-link" href="#tab-3" data-toggle="tab">C#</a>
+  </nav>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab-1">Home</div>
+    <div class="tab-pane" id="tab-2">Cursos</div>
+    <div class="tab-pane" id="tab-3">C#</div>
+  </div>
+  <hr />
+  <nav class="nav nav-pills">
+    <a class="nav-link active" href="#tab-4" data-toggle="tab">Home</a>
+    <a class="nav-link" href="#tab-5" data-toggle="tab">Cursos</a>
+    <a class="nav-link" href="#tab-6" data-toggle="tab">C#</a>
+  </nav>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab-4">Home</div>
+    <div class="tab-pane" id="tab-5">Cursos</div>
+    <div class="tab-pane" id="tab-6">C#</div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-3">
+      <nav class="nav nav-pills">
+        <a class="nav-link active" href="#tab-7" data-toggle="tab">Home</a>
+        <a class="nav-link" href="#tab-8" data-toggle="tab">Cursos</a>
+        <a class="nav-link" href="#tab-9" data-toggle="tab">C#</a>
+      </nav>
+    </div>
+    <div class="col-9">
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab-7">Home</div>
+        <div class="tab-pane fade" id="tab-8">Cursos</div>
+        <div class="tab-pane fade" id="tab-9">C#</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Titulo</h5>
+      <h6 class="card-subtitle">Subtitulo</h6>
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      <button class="btn btn-primary">OK</button>
+      <br />
+      <a href="#" class="card-link">Ação</a>
+    </div>
+  </div>
+  <hr />
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">Titulo</h5>
+    </div>
+    <div class="card-body">
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+    </div>
+    <div class="card-footer">Rodapé</div>
+  </div>
+  <hr />
+  <div class="card border-success">
+    <div class="card-header">
+      <h5 class="card-title">Titulo</h5>
+    </div>
+    <div class="card-body">
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+    </div>
+    <div class="card-footer">Rodapé</div>
+  </div>
+  <hr />
+  <div class="card bg-success text-white">
+    <div class="card-header">
+      <h5 class="card-title">Titulo</h5>
+    </div>
+    <div class="card-body">
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+    </div>
+    <div class="card-footer">Rodapé</div>
+  </div>
+  <hr />
+  <div class="card">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item"><a href="#" class="nav-link active">Link 1</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+      </ul>
+    </div>
+    <div class="card-body">
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+    </div>
+    <div class="card-footer">Rodapé</div>
+  </div>
+  <hr />
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="card-img" />
+    <div class="card-body">
+      <h5 class="card-title">Titulo</h5>
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      <a href="#" class="card-link">Ação</a>
+    </div>
+  </div>
+  <hr />
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="card-img-top" />
+    <div class="card-body">
+      <h5 class="card-title">Titulo</h5>
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      <a href="#" class="card-link">Ação</a>
+    </div>
+  </div>
+  <hr />
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="card-img" />
+    <div class="card-img-overlay text-white">
+      <h5 class="card-title">Titulo</h5>
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1484636373136-1920fca36757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="Foto" class="card-img" />
+    </div>
+    <div class="col-md-8">
+      <h5 class="card-title">Titulo</h5>
+      <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="card-group">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhgjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhgjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="card-columns">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhgjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjgjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Titulo</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">hhhj hfgfgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+      </div>
+      <div class="card-footer">Rodapé</div>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="accordion" id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#a">A</button>
+      </div>
+      <div id="a" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <p class="card-text">hhhj hfgfgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#b">B</button>
+      </div>
+      <div id="b" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p class="card-text">hhhj hfgfgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <button class="btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#c">C</button>
+      </div>
+      <div id="c" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p class="card-text">hhhj hfgfgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg hhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjghhhj hfgf hjghj gjhgh gjhgj gjg gjg</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<nav class="navbar navbar-dark bg-dark">
+  <a href="#" class="navbar-brand">LOGO</a>
+</nav>
+<br />
+<nav class="navbar navbar-light bg-light">
+  <a href="#" class="navbar-brand">LOGO</a>
+</nav>
+<br />
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <a href="#" class="navbar-brand">LOGO</a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a href="#" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Cursos</a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">PHP7</a>
+        <a href="#" class="dropdown-item">PHP7</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">PHP7</a>
+        <a href="#" class="dropdown-item">PHP7</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">Contato</a>
+    </li>
+  </ul>
+</nav>
+<br />
+<nav class="navbar navbar-light bg-light navbar-expand-lg">
+  <a href="#" class="navbar-brand">LOGO</a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Cursos</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">PHP7</a>
+          <a href="#" class="dropdown-item">PHP7</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">PHP7</a>
+          <a href="#" class="dropdown-item">PHP7</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Contato</a>
+      </li>
+    </ul>
+    <form action="" class="form-inline my-2 my-lg-0">
+      <input type="search" class="form-control mr-sm-2" placeholder="Pesquisar..." />
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+  </div>
+</nav>
+<br />
+<hr />
+<br />
+<div class="container">
+  <nav>
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a href="#" class="page-link">&laquo;</a>
+      </li>
+      <li class="page-item active">
+        <a href="#" class="page-link">1</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">2</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">3</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">&raquo;</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<hr />
+<div class="container">
+  <nav>
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a href="#" class="page-link">&laquo;</a>
+      </li>
+      <li class="page-item active">
+        <a href="#" class="page-link">1</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">2</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">3</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">&raquo;</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<hr />
+<div class="container">
+  <nav>
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <a href="#" class="page-link">&laquo;</a>
+      </li>
+      <li class="page-item active">
+        <a href="#" class="page-link">1</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">2</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">3</a>
+      </li>
+      <li class="page-item">
+        <a href="#" class="page-link">&raquo;</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar"></div>
+  </div>
+  <hr />
+  <div class="progress">
+    <div class="progress-bar w-25" role="progressbar">25%</div>
+  </div>
+  <hr />
+  <div class="progress">
+    <div class="progress-bar bg-success w-25" role="progressbar">25%</div>
+  </div>
+  <hr />
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width:25%">25%</div>
+  </div>
+  <hr />
+  <div class="progress" style="height:100px">
+    <div class="progress-bar" role="progressbar" style="width:25%">25%</div>
+  </div>
+  <hr />
+  <div class="progress" style="height:1px">
+    <div class="progress-bar" role="progressbar" style="width:25%"></div>
+  </div>
+  <hr />
+  <div class="progress" style="height:100px">
+    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:25%">25%</div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <div class="spinner-border"><div class="sr-only">Carregando...</div></div>
+  <div class="spinner-border text-primary"><div class="sr-only">Carregando...</div></div>
+  <div class="spinner-grow text-danger"><div class="sr-only">Carregando...</div></div>
+  <hr />
+  <div class="d-flex justify-content-center align-items-center" style="height:25vh;">
+    <div class="spinner-border"><div class="sr-only">Carregando...</div></div>
+  </div>
+  <hr />
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border ml-auto"><div class="sr-only">Carregando...</div></div>
+  </div>
+  <hr />
+  <button class="btn btn-primary" disabled>
+    <div class="spinner-border spinner-border-sm ml-auto"></div>
+    Carregando...
+  </button>
+</div>
+<br />
+<hr />
+<br />
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="modal-1">Abrir Tela</button>
+<div class="modal" id="modal-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Titulo do modal</div>
+        <button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancelar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="modal-4">Abrir Tela</button>
+<div class="modal" id="modal-4">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Titulo do modal</div>
+        <button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancelar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="modal-2">Abrir Tela</button>
+<div class="modal" id="modal-2">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Titulo do modal</div>
+        <button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancelar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="modal-3">Abrir Tela</button>
+<div class="modal" id="modal-3">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Titulo do modal</div>
+        <button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+        <p>jhasgdh sdhas db sdja jhasd jkasd kasd kasd ansmgas kagsd maaksd samdasd asdub adgsas d ajdgjabd madbam dag adagd ans dia d aksdb a sdna dhahs dhja dh asjd aj sdagga</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancelar</button>
+        <button type="button" class="btn btn-primary">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<hr />
+<br />
+<div class="container">
+  <i class="fas fa-plus-square"></i>
+  <hr />
+  <button class="btn btn-success"><i class="fas fa-plus-square"></i>Icones</button>
+</div>

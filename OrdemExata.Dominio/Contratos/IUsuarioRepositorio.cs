@@ -7,5 +7,6 @@ namespace OrdemExata.Dominio.Contratos
 {
     public interface IUsuarioRepositorio : IBaseRepositorio<Usuario>
     {
+        Usuario Obter(string login, string senha);
     }
 }

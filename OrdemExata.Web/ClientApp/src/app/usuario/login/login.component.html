@@ -1,0 +1,37 @@
+<div class="text-center">
+  <form class="form-signin">
+
+    <img src="../../../assets/img/logo.jpg" />
+
+    <div class="alert alert-danger alert-dismissible text-left fade show" role="alert" *ngIf="mensagem && blocoErro">
+      <strong>Erro!</strong> {{mensagem}}
+      <button class="close" (click)="fecharBlocoErro()"><span>&times;</span></button>
+    </div>
+
+    <h3><small>Por favor, inscreva-se</small></h3>
+
+    <label for="inputLogin" class="sr-only">Login</label>
+    <input type="text" id="inputLogin" name="login" class="form-control" [ngClass]="{'is-invalid':login.invalid && (login.ditry || login.touched), 'is-valid':login.valid && (login.ditry || login.touched)}" placeholder="Informe seu login" [(ngModel)]="usuario.login" #login="ngModel" required />
+    <div class="invalid-feedback" *ngIf="login.invalid && (login.ditry || login.touched)">
+      <div *ngIf="login.errors.required">
+        Login é de preenchimento obrigatório.
+      </div>
+    </div>
+
+    <label for="inputSenha" class="sr-only">Senha</label>
+    <input type="password" id="inputSenha" name="senha" class="form-control mt-2" [ngClass]="{'is-invalid':senha.invalid && (senha.ditry || senha.touched), 'is-valid':senha.valid && (senha.ditry || senha.touched)}" placeholder="Informe sua senha" [(ngModel)]="usuario.senha" #senha="ngModel" required />
+    <div class="invalid-feedback" *ngIf="senha.invalid && (senha.ditry || senha.touched)">
+      <div *ngIf="senha.errors.required">
+        Senha é de preenchimento obrigatório.
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-block mt-2" type="submit" (click)="entrar()" [disabled]="spinner">
+      <div class="spinner-border spinner-border-sm ml-auto" role="status" aria-hidden="true" *ngIf="spinner"></div>
+      Entrar
+    </button>
+
+    <p class="mt-5 mb-3 text-muted">2020 &copy; Todos os direitos reservados.</p>
+
+  </form>
+</div>

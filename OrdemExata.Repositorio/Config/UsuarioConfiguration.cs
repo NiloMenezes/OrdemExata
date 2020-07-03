@@ -35,6 +35,11 @@ namespace OrdemExata.Repositorio.Config
             //builder
             //    .Property(u => u.Data)
             //    .IsRequired();
+
+            //builder
+            //    .Property(u => u.Preco)
+            //    .HasColumnType("decimal(19,4)")
+            //    .IsRequired();
         }
     }
 }

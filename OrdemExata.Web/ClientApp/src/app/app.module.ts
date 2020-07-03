@@ -6,17 +6,23 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { LoginComponent } from './usuario/login/login.component';
+import { GuardaRotas } from './autorizacao/guarda.rotas';
+import { AjudaComponent } from './ajuda/ajuda.component';
+
+
+import { UsuarioServico } from './servicos/usuario/usuario.servico';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent
+    LoginComponent,
+    AjudaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -24,11 +30,11 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'entrar', component: LoginComponent },
+      { path: 'ajuda', component: AjudaComponent, canActivate: [GuardaRotas] },
     ])
   ],
-  providers: [],
+  providers: [UsuarioServico],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
